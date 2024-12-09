@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/values_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter values separated by comma"
+        android:padding="25dp"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/labels_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp"
+        android:hint="Enter labels separated by comma"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/x_axis_title_input"
+        android:padding="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter X-axis title"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/y_axis_title_input"
+        android:layout_width="match_parent"
+        android:padding="25dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Y-axis title"
+        android:inputType="text"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp"
+        android:onClick="generateGraph"
+        android:backgroundTint="#2196F3"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:text="Generate Bar Graph" />
+
+</LinearLayout>
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <!-- EditText for entering x values -->
+    <EditText
+        android:id="@+id/x_values_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter x values (comma-separated)"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+    <!-- EditText for entering y values -->
+    <EditText
+        android:id="@+id/y_values_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter y values (comma-separated)"
+        android:inputType="text"
+        android:minHeight="48dp" />
+    <!-- Button for generating spider chart -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="generateSpiderChart"
+        android:textColor="@color/black"
+        android:backgroundTint="#2196F3"
+        android:text="Generate Spider Chart" />
+
+    <!-- Layout where the spider chart will be displayed -->
+    <LinearLayout
+        android:id="@+id/spider_chart_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    </LinearLayout>
+
+</LinearLayout>

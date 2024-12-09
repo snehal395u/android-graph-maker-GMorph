@@ -1,0 +1,59 @@
+<!-- activity_line_graph.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/x_values_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="X Values (comma-separated)"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/y_values_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Y Values (comma-separated)"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/color_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Colors (comma-separated)"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/x_axis_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="X-axis Label"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/y_axis_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Y-axis Label"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/generate_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:backgroundTint="#2196F3"
+        android:text="Generate Graph" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/graph_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    </LinearLayout>
+
+
+</LinearLayout>

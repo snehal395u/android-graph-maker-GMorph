@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/histogram_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp">
+
+        <!-- EditText for entering values -->
+        <EditText
+            android:id="@+id/values_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter values (comma-separated)"
+            android:inputType="text"
+            android:minHeight="48dp" />
+
+        <!-- EditText for entering colors -->
+        <EditText
+            android:id="@+id/color_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter colors (comma-separated)"
+            android:inputType="text"
+            android:minHeight="48dp" />
+
+        <!-- EditText for entering x-axis label -->
+        <EditText
+            android:id="@+id/x_axis_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter x-axis label"
+            android:inputType="text"
+            android:minHeight="48dp" />
+
+        <!-- EditText for entering y-axis label -->
+        <EditText
+            android:id="@+id/y_axis_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter y-axis label"
+            android:inputType="text"
+            android:minHeight="48dp" />
+
+        <!-- Button to generate histogram -->
+        <Button
+            android:id="@+id/generate_histogram_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Generate Histogram"
+            android:onClick="generateHistogram" />
+    </LinearLayout>
+
+    <!-- Layout for displaying the histogram -->
+    <LinearLayout
+        android:id="@+id/histogram_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/histogram_input_layout"
+        android:orientation="vertical" />
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <!-- EditText field for entering x-axis title -->
+    <EditText
+        android:id="@+id/x_axis_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter X Axis Title"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+    <!-- EditText field for entering y-axis title -->
+    <EditText
+        android:id="@+id/y_axis_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Y Axis Title"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+    <!-- EditText field for entering x values -->
+    <EditText
+        android:id="@+id/x_values_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter X Values (comma separated)"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+    <!-- EditText field for entering y values -->
+    <EditText
+        android:id="@+id/y_values_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Y Values (comma separated)"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+    <!-- Button to generate scatter plot -->
+    <Button
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:backgroundTint="#2196F3"
+        android:layout_height="wrap_content"
+        android:text="Generate Scatter Plot"
+        android:onClick="generateScatterPlot" />
+
+    <!-- LinearLayout where scatter plot will be drawn dynamically -->
+    <LinearLayout
+        android:id="@+id/scatter_plot_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    </LinearLayout>
+
+</LinearLayout>
